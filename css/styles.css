@@ -1,1 +1,25 @@
-/* ini css */
+
+main {display: flex;}
+
+h1 {
+    text-align: center;
+}
+aside {
+    margin:50px
+}
+
+form{
+    background-color: #00BCD4;
+    padding: 10px;
+    border-color: black;
+    border: solid;}
+
+    /* Multiclass  */
+    /* .bg-blue{
+        background-color: aquamarine;} */ 
+    /* .bg-yellow{
+         background-color: cornsilk;} */
+
+footer {
+    text-align: center;
+}        
