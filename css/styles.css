@@ -1,18 +1,79 @@
+*,
+ html {
+    margin: 0;
+    padding: 0;
+}
 
-main {display: flex;}
+/* Body style */
+main {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
 
+/* style font keseluruhan */
+p {
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+/* Header style */
 h1 {
+    font-size: 2vw;
+    font-family: cursive;
+    color: orange;
     text-align: center;
-}
-aside {
-    margin:50px
+    background-color: black;
+    border-style: solid;
+    border-color: orange;
+    border-width: 5px;
 }
 
-form{
-    background-color: #00BCD4;
+/* Margin keseluruhan */
+aside {
+    padding: 5px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-width: 5px;
+    border-style: groove;
+    border-color: orange;
+    border-radius: 25px;
+}
+/* Form submit style */
+form {
+    font-size: 1vw;
+    color: orange;
+    text-align: center;
+    background-color: black;
     padding: 10px;
-    border-color: black;
-    border: solid;}
+    border-color: orange;
+    border: solid;
+    border-radius: 25px;
+}
+
+    
+h4 {
+    font-size: 1vw;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    }
+
+/* List style */
+ol {
+    font-size: 1vw;
+    list-style-type: decimal;
+    -webkit-padding-start: 15px;
+    font-family: Lato-Light, sans-serif;
+    font-weight: 500;
+    color: black;
+}
+/* Style Tombol  */
+input[type="radio"]{
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 20px;
+    height: 20px;
+}
 
     /* Multiclass  */
     /* .bg-blue{
@@ -20,6 +81,39 @@ form{
     /* .bg-yellow{
          background-color: cornsilk;} */
 
+/* Footer style */
 footer {
+    position: absolute;
+    font-family: cursive;
+    background-color: black;
     text-align: center;
-}        
+    margin-bottom: 0%;
+    border: 10px;
+    border-style: solid;
+    border-color: orange;
+    width: 100%;
+}
+
+/* Link Footer */
+.FooterWA{
+    text-align: left;
+    font-size: 2vw;
+    text-decoration: double;
+    color: orange;
+    clear: both;
+    background: url(assets\decree.png);
+    
+}
+
+.tunjuk {
+    background-repeat: no-repeat;
+    width: 2vw;
+
+    
+}
+a:hover {
+    color:  blue;
+}
+a:active{
+    color: white;
+}

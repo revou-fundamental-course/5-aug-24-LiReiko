@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
+
 <body>
-    <header><h1>Kalkulator BMI</h1></header>
 
-<main>
-    <aside>
-        <article>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </article>
+    <header>
+        <h1>Kalkulator BMI</h1>
+    </header>
 
-        <form>
-            <div>
-                <h4>Jenis Kelamin</h4>
-                <input type="radio" id="Man" name="gender" value="Laki-laki"><label for="Laki-laki">Laki-laki</label>
-                <input type="radio" id="Woman" name="gender" value="Perempuan"><label for="Perempuan">Perempuan</label>
-            </div>
-            <div>
-                <h4>Berat Badan</h4>
-                <input type="number">
-            </div>
-            <div>
-                <h4>Usia</h4>
-                <input type="number">
-            </div>
-        <br>
-            <div>
-                <button>Temukan BMI Kamu</button>
-                <button>Reset</button>
-            </div>
-        </form>
-    
-        <article>
-            <header>
-                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h3>
-            </header>
-        </article>
-    </aside>
+    <main>
+        <aside>
+            <article>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang
+                    penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk,
+                    hitung sekarang di kalkulator BMI.</p>
+            </article>
+            <br>
+            <form>
+                <div>
+                    <h4>Jenis Kelamin</h4>
+                    <input type="radio" id="Man" name="gender" value="Laki-laki"><label
+                        for="Laki-laki">Laki-laki</label>
+                    <input type="radio" id="Woman" name="gender" value="Perempuan"><label
+                        for="Perempuan">Perempuan</label>
+                </div>
+                <div>
+                    <h4>Berat Badan</h4>
+                    <input  type="number" name="angka" placeholder="Masukan Berat Badan">
+                </div>
+                <div>
+                    <h4>Usia</h4>
+                    <input  type="number" name="angka" placeholder="Masukan Usia">
+                </div>
+                <br>
+                <div>
+                    <button  type="submit">Hitung BMI</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+            <br>
+            <article>
+                <header>
+                    <h4>Keunggulan fitur</h4>
+                    <ol>
+                        <li>Menghitung berat badan</li>
+                        <li>Menentukan kategori berat badan ideal atau tidak</li>
+                        <li>Mempersiapkan program penurunan berat badan</li>
+                    </ol>
+                    <br>
+                    <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
+                        mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+                        selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                    </p>
+                    <br>
+                    <p> Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum.
+                    </p>
 
-    <aside>
-        <section>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</section>
-    </aside>
- </main>
+                    <p>Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
+                        kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.
+                    </p>
+                    </h4>
+                </header>
+            </article>
+        </aside>
 
+        <aside>
+            <section>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </section>
+        </aside>
+    </main>
     <footer>
-        <h2>Hubungi kami untuk info lebih lanjut</h2>
+        <img class="tunjuk" src="assets/decree.png">
+        <a class="FooterWA" href="https://api.whatsapp.com/send/?phone=%2B6281379892805&text&type=phone_number&app_absent=0">Hubungi kami untuk info lebih lanjut</a>
     </footer>
 </body>
 </html>
