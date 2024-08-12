@@ -32,6 +32,9 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
+.hasil{
+    text-align: center;
+}
 /* Header style */
 h1 {
     font-size: 2vw;
@@ -57,8 +60,7 @@ aside {
     width: 50%;
 }
 section{
-    width: fit-content;
-    
+    width: fit-content;   
 }
 /* Form submit style */
 form{
