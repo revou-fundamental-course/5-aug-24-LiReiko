@@ -3,14 +3,30 @@
     margin: 0;
     padding: 0;
 }
+/* Header style */
+header {
+    position: sticky;
+    width: 100%;
+    font-size: 1vw;
+    font-family: cursive;
+    color: orange;
+    text-align: center;
+    background-color: black;
+    border-style: solid;
+    border-color: orange;
+    border-width: 5px;
+}
 
 /* Body style */
 main {
     display: flex;
     background-color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+    padding: 5px;
 }
 
 /* style font keseluruhan */
+
 p {
     font-size: 1vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -33,13 +49,19 @@ aside {
     padding: 5px;
     margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
     border-width: 5px;
     border-style: groove;
     border-color: orange;
     border-radius: 25px;
+    width: 50%;
+}
+section{
+    width: fit-content;
+    
 }
 /* Form submit style */
-form {
+form{
     font-size: 1vw;
     color: orange;
     text-align: center;
@@ -49,8 +71,8 @@ form {
     border: solid;
     border-radius: 25px;
 }
+  
 
-    
 h4 {
     font-size: 1vw;
     margin-top: 0%;
@@ -66,24 +88,24 @@ ol {
     font-weight: 500;
     color: black;
 }
+
 /* Style Tombol  */
 input[type="radio"]{
     cursor: pointer;
     border: none;
     background: none;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
-
-    /* Multiclass  */
-    /* .bg-blue{
-        background-color: aquamarine;} */ 
-    /* .bg-yellow{
-         background-color: cornsilk;} */
-
+.sakit{
+    color: orange;
+    text-align: center;
+    list-style-type: none;
+}
 /* Footer style */
 footer {
-    position: absolute;
+    position: sticky;
+    bottom: 0%;
     font-family: cursive;
     background-color: black;
     text-align: center;
@@ -92,6 +114,7 @@ footer {
     border-style: solid;
     border-color: orange;
     width: 100%;
+    padding: 5px;
 }
 
 /* Link Footer */
@@ -105,6 +128,7 @@ footer {
     
 }
 
+/* Hover Footer */
 .tunjuk {
     background-repeat: no-repeat;
     width: 2vw;

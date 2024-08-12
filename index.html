@@ -10,7 +10,7 @@
 
 <body>
 
-    <header>
+    <header id="kepala">
         <h1>Kalkulator BMI</h1>
     </header>
 
@@ -31,47 +31,50 @@
                         for="Perempuan">Perempuan</label>
                 </div>
                 <div>
-                    <h4>Berat Badan</h4>
-                    <input  type="number" name="angka" placeholder="Masukan Berat Badan">
+                    <h4>Berat Badan(Kg)</h4>
+                    <input type="number" name="angka" placeholder="Masukan Berat Badan">
                 </div>
                 <div>
                     <h4>Usia</h4>
-                    <input  type="number" name="angka" placeholder="Masukan Usia">
+                    <input type="number" name="angka" placeholder="Masukan Usia">
                 </div>
                 <br>
                 <div>
-                    <button  type="submit">Hitung BMI</button>
+                    <button type="submit">Hitung BMI</button>
                     <button type="reset">Reset</button>
                 </div>
             </form>
             <br>
             <article>
-                <header>
-                    <h4>Keunggulan fitur</h4>
-                    <ol>
-                        <li>Menghitung berat badan</li>
-                        <li>Menentukan kategori berat badan ideal atau tidak</li>
-                        <li>Mempersiapkan program penurunan berat badan</li>
-                    </ol>
-                    <br>
-                    <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
-                        mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya
-                        selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
-                    </p>
-                    <br>
-                    <p> Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum.
-                    </p>
+                <h4>Keunggulan fitur</h4>
+                <ol>
+                    <li>Menghitung berat badan</li>
+                    <li>Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ol>
+                <br>
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh
+                    mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya
+                    selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                </p>
+                <br>
+                <p> Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum.
+                </p>
 
-                    <p>Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
-                        kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.
-                    </p>
-                    </h4>
-                </header>
+                <p>Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
+                    kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>
+                </p>
+                </h4>
             </article>
         </aside>
 
         <aside>
             <section>
+                <form>
+                    <p>Berat Badan lebih</p>
+                    <!-- kolom hasil logic -->
+                    <button type="submit">Download Hasil BMI</button>
+                </form>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and
@@ -82,12 +85,38 @@
                     release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                     publishing
                     software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <br>
+                <button type="submit">Konsultasi Ahli Gizi</button>
+                <button type="submit">Daftar Online Ahli Gizi</button>
+                <br>
+                <br>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                </p>
+                <form>
+                    <h4>Keunggulan fitur</h4>
+                    <br>
+                    <ol class="sakit">
+                        <li>Menghitung berat badan</li>
+                        <li>Menentukan kategori berat badan ideal atau tidak</li>
+                        <li>Mempersiapkan program penurunan berat badan</li>
+                    </ol>
+                    <br>
+                    <button type="submit">Konsultasi Dokter Via APK</button>
+                    <button type="submit">Daftar Online Sekarang</button>
+                </form>
             </section>
         </aside>
     </main>
     <footer>
         <img class="tunjuk" src="assets/decree.png">
-        <a class="FooterWA" href="https://api.whatsapp.com/send/?phone=%2B6281379892805&text&type=phone_number&app_absent=0">Hubungi kami untuk info lebih lanjut</a>
+        <a class="FooterWA"
+            href="https://api.whatsapp.com/send/?phone=%2B6281379892805&text&type=phone_number&app_absent=0">Hubungi
+            kami untuk info lebih lanjut</a>
     </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
