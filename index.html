@@ -1,50 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css\styles.css">
-</head>
+    <link rel="stylesheet" href="css/styles.css">
 
 <body>
-
+    <!-- Title -->
     <header id="kepala">
         <h1>Kalkulator BMI</h1>
     </header>
-
+    <!-- Title End -->
     <main>
+        <!-- Konten  1 -->
         <aside>
+            <!-- Artikel 1 -->
             <article>
                 <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang
                     penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk,
                     hitung sekarang di kalkulator BMI.</p>
             </article>
-            <br>
-            <form>
-                <div>
-                    <h4>Jenis Kelamin</h4>
-                    <input type="radio" id="Man" name="gender" value="Laki-laki"><label
-                        for="Laki-laki">Laki-laki</label>
-                    <input type="radio" id="Woman" name="gender" value="Perempuan"><label
-                        for="Perempuan">Perempuan</label>
-                </div>
-                <div>
-                    <h4>Berat Badan(Kg)</h4>
-                    <input type="number" name="angka" placeholder="Masukan Berat Badan">
-                </div>
-                <div>
-                    <h4>Usia</h4>
-                    <input type="number" name="angka" placeholder="Masukan Usia">
-                </div>
+            <!-- Artikel 1 end -->
+            <!-- Form Data -->
+            <form class="fr1" onsubmit="return false">
+                <h4>Jenis Kelamin</h4>
+                <input type="radio" id="man" name="gender" value="Laki-laki"><label for="Man">Laki-laki</label>
+                <input type="radio" id="woman" name="gender" value="Perempuan"><label for="Woman">Perempuan</label>
                 <br>
-                <div>
-                    <button type="submit">Hitung BMI</button>
-                    <button type="reset">Reset</button>
-                </div>
+                <br>
+                <h4>Berat Badan(Kg)</h4>
+                <input id="weight" type="number" placeholder="Masukan Berat Badan">
+                <br>
+                <br>
+                <h4>Tinggi Badan(cm)</h4>
+                <input id="height" type="number" placeholder="Masukan Tinggi Anda">
+                <br>
+                <br>
+                <button class="btn" onclick="hitung()" type="button">Hitung BMI</button>
+                <button class="btn-reset" onclick="reload()" type="reset">Reset</button>
+                <br>
+                <h5>Silahkan geser ke bawah untuk melihat hasil</h5>
             </form>
-            <br>
+            <!-- Form Data end -->
+            <!-- Artikel 2 -->
             <article>
                 <h4>Keunggulan fitur</h4>
                 <ol>
@@ -59,59 +59,70 @@
                 </p>
                 <br>
                 <p> Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum.
-                </p>
-
-                <p>Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
+                    Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
                     kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>
                 </p>
-                </h4>
             </article>
+            <!-- Artikel 2 end -->
         </aside>
-
+        <!-- Konten 1 End -->
+        <!-- Konten 2 -->
         <aside>
-            <section>
+            <section id="fr2">
+                <!-- Form Hasil -->
                 <form>
-                    <p class="hasil">Berat Badan lebih</p>
-                    <!-- kolom hasil logic -->
-                    <button type="submit">Download Hasil BMI</button>
-                </form>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                    the
-                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <br>
-                <button type="submit">Konsultasi Ahli Gizi</button>
-                <button type="submit">Daftar Online Ahli Gizi</button>
-                <br>
-                <br>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and
-                </p>
-                <form>
-                    <h4>Keunggulan fitur</h4>
+                    <p class="hasil">Body Mass Index</p>
+                    <h2 id="hasil1">Hasil Bmi anda akan ditampilkan disini</h2>
+                    <h3 id="hasil2">Keterangan Hasil Bmi anda</h3>
                     <br>
+                    <!-- kolom hasil logic -->
+                    <button class="btn" type="submit">Download Hasil BMI</button>
+                </form>
+                <!-- Form hasil End -->
+                <br>
+                <!-- Keterangan Hasil -->
+                <p id="hasil3"></p>
+                <!-- Ketrangan Hasil End -->
+                <br>
+                <button class="btn" type="submit">Konsultasi Ahli Gizi</button>
+                <button class="btn" type="submit">Daftar Online Ahli Gizi</button>
+                <br>
+                <br>
+                <!-- Artikel 3 -->
+                <p>
+                    BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit
+                    seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan
+                    berat badan Anda.
+                </p>
+                <!-- Artikel 3 End -->
+                <br>
+                <!-- Artikel 4 -->
+                <p>Dari nilai BMI yang dipantau secara teratur, kamu bisa lebih waspada untuk menjaga berat badan supaya
+                    ngga terlalu tinggi atau terlalu rendah.
+                    <br>
+                    Sayangi badanmu dengan cara menjaga indeks massa tubuh (IMT) supaya ngga melewati batas normal.
+                </p>
+                <!-- Artikel 4 End -->
+                <!-- Form guna  -->
+                <form>
+                    <h4>Beberapa penyakit akibat kegemukan</h4>
                     <ol class="sakit">
-                        <li>Menghitung berat badan</li>
-                        <li>Menentukan kategori berat badan ideal atau tidak</li>
-                        <li>Mempersiapkan program penurunan berat badan</li>
+                        <li>Diabetes</li>
+                        <li>Hipertensi</li>
+                        <li>Sakit jantung</li>
                     </ol>
                     <br>
-                    <button type="submit">Konsultasi Dokter Via APK</button>
-                    <button type="submit">Daftar Online Sekarang</button>
+                    <button class="btn" type="submit">Daftar Online Sekarang</button>
+                    <button class="btn" type="submit">Konsultasi Dokter Via APK</button>
                 </form>
+                <!-- Form guna End -->
             </section>
         </aside>
+        <!-- Konten 2 End -->
     </main>
+    <!-- Footer -->
     <footer>
-        <img class="tunjuk" src="assets/decree.png">
+        <img class="tunjuk" src="assets/decree.png" alt="jari">
         <a class="FooterWA"
             href="https://api.whatsapp.com/send/?phone=%2B6281379892805&text&type=phone_number&app_absent=0">Hubungi
             kami untuk info lebih lanjut</a>

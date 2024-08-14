@@ -1,109 +1,74 @@
+/* Settingan html */
 *,
  html {
     margin: 0;
     padding: 0;
 }
+
 /* Header style */
 header {
     position: sticky;
-    width: 100%;
-    font-size: 1vw;
+    font-size: 50px;
     font-family: cursive;
-    color: orange;
+    color: #6EACDA;
     text-align: center;
     background-color: black;
     border-style: solid;
-    border-color: orange;
+    border-color: #03346E;
     border-width: 5px;
+    font-size: 16px;
 }
 
 /* Body style */
 main {
     display: flex;
-    background-color: rgb(255, 255, 255);
-    padding-bottom: 50px;
-    padding: 5px;
-}
-
-/* style font keseluruhan */
-
-p {
-    font-size: 1vw;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
-}
-.hasil{
-    text-align: center;
-}
-/* Header style */
-h1 {
-    font-size: 2vw;
-    font-family: cursive;
-    color: orange;
-    text-align: center;
-    background-color: black;
-    border-style: solid;
-    border-color: orange;
-    border-width: 5px;
+    padding-bottom: 5%;
+    background-color: #E2E2B6;
 }
 
 /* Margin keseluruhan */
 aside {
-    padding: 5px;
+    padding: 10px;
     margin: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     border-width: 5px;
     border-style: groove;
-    border-color: orange;
+    border-color: #03346E;
     border-radius: 25px;
     width: 50%;
 }
 section{
-    width: fit-content;   
+    width: fit-content;
 }
-/* Form submit style */
+
+/* Form style */
 form{
-    font-size: 1vw;
-    color: orange;
+    font-size: 12px;
+    color:  #6EACDA;
     text-align: center;
     background-color: black;
     padding: 10px;
-    border-color: orange;
     border: solid;
+    border-width: 5px;
     border-radius: 25px;
 }
-  
-
-h4 {
-    font-size: 1vw;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    }
+.fr1{
+    margin: 5px;
+}
 
 /* List style */
 ol {
-    font-size: 1vw;
+    text-align: left;
+    font-size: 14px;
     list-style-type: decimal;
-    -webkit-padding-start: 15px;
+    padding-left: 20px;
     font-family: Lato-Light, sans-serif;
     font-weight: 500;
     color: black;
+
 }
 
-/* Style Tombol  */
-input[type="radio"]{
-    cursor: pointer;
-    border: none;
-    background: none;
-    width: 15px;
-    height: 15px;
-}
-.sakit{
-    color: orange;
-    text-align: center;
-    list-style-type: none;
-}
 /* Footer style */
 footer {
     position: sticky;
@@ -114,17 +79,15 @@ footer {
     margin-bottom: 0%;
     border: 10px;
     border-style: solid;
-    border-color: orange;
-    width: 100%;
+    border-color: #03346E;
     padding: 5px;
 }
 
 /* Link Footer */
 .FooterWA{
-    text-align: left;
-    font-size: 2vw;
-    text-decoration: double;
-    color: orange;
+    font-size: 27px;
+    text-decoration: none;
+    color: #6EACDA;
     clear: both;
     background: url(assets\decree.png);
     
@@ -133,13 +96,111 @@ footer {
 /* Hover Footer */
 .tunjuk {
     background-repeat: no-repeat;
-    width: 2vw;
-
-    
+    width: 20px;
 }
+
+/* style font keseluruhan */
+
+p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+/* Style font hasil perhitungan */
+.hasil{
+    text-align: center;
+}
+#hasil1{
+    position: sticky;
+}
+/* Font article */
+h2{
+    text-align: center;
+}
+h3{
+    font-weight: normal;
+    font-size: 15px;
+}
+h4 {
+    font-size: 15px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+/* Tulisan muncul saat mode mobile */
+h5{
+    visibility: hidden;
+}
+/* list 2 */
+.sakit{
+    color: #6EACDA;
+    text-align: center;
+    list-style-type: none;
+}
+  
+   /*STYLE input  */
+input[type="radio"]{
+    cursor: pointer;
+    border: none;
+    background: none;
+    width: 15px;
+    height: 15px;
+    accent-color: #03346E ;
+}
+input{
+    text-align: center;
+}
+/* Style hover */
 a:hover {
     color:  blue;
 }
 a:active{
     color: white;
+}
+
+.btn:hover{
+    background-color: #FF5C00;
+}
+.btn-reset:hover{
+    background-color: #FF5C00;
+}
+/* style Button */
+.btn{
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 2px;
+}
+.btn-reset{
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 2px;
+}
+/* media query */
+@media only screen and (max-width: 480px){
+    header{
+        width: 97%;
+        border-width: 6px;
+    }
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+    aside {
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fr1 {
+        margin-bottom: 20px;
+    }
+    footer{
+        width: 92%;
+    }
+    .FooterWA{
+        font-size: 10px;
+    }
+    h5{
+        visibility: visible;
+    }
 }
